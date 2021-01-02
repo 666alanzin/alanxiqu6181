@@ -567,6 +567,13 @@ async function starts() {
 						client.groupRemove(from, mentioned)
 					}
 					break
+                                case 'loli':
+					loli.getSFWLoli(async (err, res) => {
+						if (err) return reply('https://imgur.com/gallery/h1hCF https://imgur.com/gallery/rqgsr6t')
+						buffer = await getBuffer(res.url)
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ta aí punhetero'})
+					})
+					break
 				case 'listadmins':
 					if (!isGroup) return reply(mess.only.group)
 					teks = `List admin of group *${groupMetadata.subject}*\nTotal : ${groupAdmins.length}\n\n`
