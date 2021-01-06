@@ -1,4 +1,8 @@
 const help = (prefix) => {
+     ----------------------------------
+          ALANZIN NE PAI 
+	
+	  -------------------------
 	return `> *Sticker Commands* <
 comando : *${prefix}sticker* or *${prefix}stiker*
 desc: converter imagem / gif / vídeo em adesivo
