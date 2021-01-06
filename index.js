@@ -347,9 +347,9 @@ async function starts() {
 					})
 					break
 				case 'nsfwloli':
-					if (!isNsfw) return reply('🌜 *FALSO* 🌛')
+					if (!isNsfw) return reply(' https://imgur.com/a/yErskKY')
 					loli.getNSFWLoli(async (err, res) => {
-						if (err) return reply('🌜 *ERRO* 🌛')
+						if (err) return reply('🌜 😍🤏🏻 🌛')
 						buffer = await getBuffer(res.url)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
 					})
